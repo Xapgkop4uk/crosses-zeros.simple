@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center">
+        <canvas id="1x1" class="cell" width="100" height="100" style="border:1px solid #d3d3d3;"></canvas>
+        <canvas id="1x2" class="cell" width="100" height="100" style="border:1px solid #d3d3d3;"></canvas>
+        <canvas id="1x3" class="cell" width="100" height="100" style="border:1px solid #d3d3d3;"></canvas>
+    </div>
+    <div class="d-flex justify-content-center">
+      <canvas class="cell" id="2x1" width="100" height="100" style="border:1px solid #d3d3d3;"></canvas>
+      <canvas class="cell" id="2x2" width="100" height="100" style="border:1px solid #d3d3d3;"></canvas>
+      <canvas class="cell" id="2x3" width="100" height="100" style="border:1px solid #d3d3d3;"></canvas>
+    </div>
+    <div class="d-flex justify-content-center">
+      <canvas class="cell" id="3x1" width="100" height="100" style="border:1px solid #d3d3d3;"></canvas>
+      <canvas class="cell" id="3x2" width="100" height="100" style="border:1px solid #d3d3d3;"></canvas>
+      <canvas class="cell" id="3x3" width="100" height="100" style="border:1px solid #d3d3d3;"></canvas>
+    </div>
+    <div class="container">
+      <button type="button" class="btn btn-primary btn-lg btn-block" id="refresh">New Game</button>
+    </div>
+    <div class="modal fade" id="Modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">End of game</h4>
+          </div>
+          <div class="modal-body">
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">New Game</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js.cross-zero.js"></script>
+  </body>
+</html>
