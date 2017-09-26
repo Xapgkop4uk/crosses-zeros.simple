@@ -14,7 +14,7 @@ function bubbleSort(arr){
   }
 }
 
-function coctailSort(arr){
+function cocktailSort(arr){
   var left = 0;
   var right = arr.length-1;
   var lastPosition = 0;
