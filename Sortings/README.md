@@ -7,3 +7,4 @@ realisation of basic sorting, list of released for current moment:
 * Insertion
 * Gnome
 * Merge
+* Binary Tree
