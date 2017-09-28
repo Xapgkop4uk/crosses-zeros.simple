@@ -1,4 +1,4 @@
-function bTreeSort(arr){
+exports.bTreeSort = function (arr){
   bTreeNode = function(val, left, right){
     this.val =  val;
     this.left = left;

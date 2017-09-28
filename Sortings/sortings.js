@@ -1,4 +1,4 @@
-function bubbleSort(arr){
+exports.bubbleSort = function (arr){
   var changePlace = arr.length-1;
   for (var i = 0; i < arr.length-1; i++){
     var change = false;
@@ -12,9 +12,9 @@ function bubbleSort(arr){
     }
     if(!change) break;
   }
-}
+};
 
-function cocktailSort(arr){
+exports.cocktailSort = function(arr){
   var left = 0;
   var right = arr.length-1;
   var lastPosition = 0;
@@ -36,7 +36,7 @@ function cocktailSort(arr){
   }
 }
 
-function insertionSort(arr){
+exports.insertionSort = function(arr){
   for(var i = 0; i < arr.length-1; i++){
     var j = i;
     while(arr[j] > arr[j+1] & j >= 0){
@@ -46,7 +46,7 @@ function insertionSort(arr){
   }
 }
 
-function gnomeSort(arr){
+exports.gnomeSort = function(arr){
   var i = 0;
   var selection = 0;
   while(i < arr.length){
@@ -61,16 +61,16 @@ function gnomeSort(arr){
   }
 }
 
-function mergeSort(arr){
+exports.mergeSort = function(arr){
   var left = [];
   var right = [];
   left = arr.slice(0, arr.length/2);
   right = arr.slice(arr.length/2 , arr.length);
 
   if(left.length != 1)
-    mergeSort(left);
+    exports.mergeSort(left);
   if(right.length != 1)
-    mergeSort(right);
+    exports.mergeSort(right);
 
   var i = 0;
   var j = 0;
